@@ -1,0 +1,123 @@
+\documentclass{beamer}% font setting ,8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt.
+\usepackage[utf8]{inputenc}
+%\usetheme{Copenhagen}% themes ,select by yourself
+
+\usetheme{CambridgeUs}% theme CambridgeUs
+%\usecolortheme{beaver}% color theme
+%\usefonttheme{structuresmallcapsserif}% font theme
+
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\setbeamertemplate{background}{\includegraphics[width=\paperwidth]{ecnu_bg}}
+
+%Information to be included in the title page:
+\title[Short Title] %optional
+{Sample Title}
+
+\subtitle{Subtitle}
+
+\author[Yina Lv] % (optional, for multiple authors)
+{Elaine Lv}
+
+\institute[ECNU] % (optional)
+{
+  Computer Science and Technology\\
+  East China Normal University
+
+}
+
+\date[May, 13, 2019] % (optional)
+{May, 13, 2019}
+
+%\logo{\includegraphics[height=1.5cm]{ecnucircle}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{frame}
+    \frametitle{Sample frame title}
+    This is a text in the first frame. This is a text in the first frame. This is a text in the first frame.
+
+    %\includegraphics[scale=1.2, angle=45]{lion-logo}
+    \begin{figure}[h]
+      \includegraphics[width=8cm]{pkq}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sample frame title}
+    This is a text in second frame.
+    For the sake of showing an example.
+
+    \begin{itemize}
+     \item<1-> Text visible on slide 1
+     \item<2-> Text visible on slide 2
+     \item<3-> Text visible on slide 3
+     \item<4-> Text visible on slide 4
+    \end{itemize}
+
+\end{frame}
+
+{
+    \begin{frame}
+     In this slide \pause
+
+     the text will be partially visible \pause
+
+     And finally everything will be there
+    \end{frame}
+}
+
+\begin{frame}
+    \frametitle{Sample frame title}
+
+    In this slide, some important text will be
+    \alert{highlighted} because it's important.
+    Please, don't abuse it.
+
+    \begin{block}{Remark}
+    Sample text
+    \end{block}
+
+    \begin{alertblock}{Important theorem}
+    Sample text in red box
+    \end{alertblock}
+
+    \begin{examples}
+    Sample text in green box. The title of the block is ``Examples".
+    \end{examples}
+\end{frame}
+
+\begin{frame}
+\frametitle{Two-column slide}
+
+    \begin{columns}
+
+    \column{0.5\textwidth}
+        This is a text in first column.
+        $$E=mc^2$$
+        \begin{itemize}
+            \item First item
+            \item Second item
+        \end{itemize}
+
+        \column{0.5\textwidth}
+        This text will be in the second column
+        and on a second tought this is a nice looking
+        layout in some cases.
+    \end{columns}
+\end{frame}
+
+\end{document}

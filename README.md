@@ -5,3 +5,6 @@
 
 ### 红色模板效果图：
 ![red](https://github.com/elainelv/elaineself/blob/master/Slides%20template/red.png)
+
+### beamer 效果图
+![red](https://github.com/elainelv/elaineself/blob/master/Slides%20template/beamer.png)
